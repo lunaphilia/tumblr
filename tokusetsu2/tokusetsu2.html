@@ -62,6 +62,8 @@
   <meta name="text:Track09 Description" content="" />
   <meta name="text:Track10 Title" content="" />
   <meta name="text:Track10 Description" content="" />
+  <meta name="text:Track11 Title" content="" />
+  <meta name="text:Track11 Description" content="" />
 
   <meta name="text:Staff01 Name" content="" />
   <meta name="text:Staff01 Role" content="" />
@@ -93,6 +95,9 @@
   <meta name="text:Staff10 Name" content="" />
   <meta name="text:Staff10 Role" content="" />
   <meta name="text:Staff10 URL" content="" />
+  <meta name="text:Staff11 Name" content="" />
+  <meta name="text:Staff11 Role" content="" />
+  <meta name="text:Staff11 URL" content="" />
 
   <meta name="if:Enable Facebook Button" content="1"/>
   <meta name="if:Enable Tweet Button" content="1"/>
@@ -426,6 +431,13 @@
               <span class="meta">{text:Track10 Description}</span>
             </li>
           {block:IfTrack10Title}
+          {block:IfTrack11Title}
+            <li>
+              <span class="number">11</span>
+              <span class="title">{text:Track11 Title}</span>
+              <span class="meta">{text:Track11 Description}</span>
+            </li>
+          {block:IfTrack11Title}
         </ol>
       </div>
     </section>
@@ -571,6 +583,17 @@
               {/block:IfStaff10URL}
             </li>
           {/block:IfStaff10Name}
+          {block:IfStaff11Name}
+            <li>
+              <span class="role">{text:Staff11 Role}</span>
+              <span class="title">{text:Staff11 Name}</span>
+              {block:IfStaff11URL}
+                <span class="website">
+                  <a href="{text:Staff11 URL}" target="_blank">Website</a>
+                </span>
+              {/block:IfStaff11URL}
+            </li>
+          {/block:IfStaff11Name}
         </ul>
       </div>
     </section>
